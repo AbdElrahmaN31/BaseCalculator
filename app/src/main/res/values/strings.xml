@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calc</string>
+    <string name="number_1">First number</string>
+    <string name="second_number">Second Number</string>
+    <string name="_0">0</string>
+    <string name="_add">+</string>
+    <string name="_sub">-</string>
+    <string name="_div">/</string>
+    <string name="_mul">*</string>
+    <string name="_equal">=</string>
+</resources>

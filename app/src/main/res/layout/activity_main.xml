@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#75e493"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/num_1"
+                style="@style/EditTextStyle"
+                android:hint="@string/number_1" />
+
+            <TextView
+                android:id="@+id/operation_sign"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/num_2"
+                style="@style/EditTextStyle"
+                android:hint="@string/second_number" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/_0"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add"
+                style="@style/ButtonStyle"
+                android:text="@string/_add"
+                android:onClick="add"/>
+
+            <Button
+                android:id="@+id/sub"
+                style="@style/ButtonStyle"
+                android:text="@string/_sub"
+                android:onClick="sub"/>
+
+            <Button
+                android:id="@+id/div"
+                style="@style/ButtonStyle"
+                android:text="@string/_div"
+                android:onClick="div"/>
+
+            <Button
+                android:id="@+id/mul"
+                style="@style/ButtonStyle"
+                android:text="@string/_mul"
+                android:onClick="mul"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView style="@style/EmptyTextViewStyle" />
+
+            <Button
+                android:id="@+id/equal"
+                style="@style/ButtonStyle"
+                android:text="@string/_equal"
+                android:onClick="equal"/>
+
+            <TextView style="@style/EmptyTextViewStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
